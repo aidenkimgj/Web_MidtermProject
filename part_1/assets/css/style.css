@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header{
+    background-color: white;
+    color: gold;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    font-family: 'Staatliches', cursive;
+
+}
+form div label img {
+    
+    display: block;
+    width: 75px;
+    height: auto;
+    margin-left: 20px;
+   
+}
+
+.hand, .convert {
+    float: left;
+    margin-left: 50px;
+}
+
+.hand {
+	margin-right: 200px;
+}
+body {
+	background-color: rgb(9, 9, 82);
+	color: gold;
+	margin: 0;
+	font-weight: lighter;
+	font-family: 'Noto Sans HK', sans-serif;
+}
+.money {
+    margin-top: 20px;
+    display: block;
+}
+.money input {
+    margin-left: 10px;
+    width: 100px;
+}
+.rate input {
+    margin-left: 10px;
+    width: 111px;
+    margin-bottom: 50px;
+}

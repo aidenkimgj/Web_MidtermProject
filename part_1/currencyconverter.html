@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Currency Converter</h1>
+        </header>
+
+        <form >
+            <div class = "hand">
+                <h3>Select Currency on Your Hand</h3>
+              
+                <label>
+                    <img src="assets/images/euro.jpg" alt="Euro">
+                    <input type="radio" name="currency" value="euro">
+                    <span>Euro</span>
+                </label>
+                <label>
+                    <img src="assets/images/us.jpg" alt="US Dollar">
+                    <input type="radio" name="currency" value="us">
+                    <span>US Dollar</span>
+                </label>
+                <label>
+                    <img src="assets/images/uk.jpg" alt="UK Pound Sterling">
+                    <input type="radio" name="currency" value="uk">
+                    <span>UK Pound Sterling</span>
+                </label>
+                <label>
+                    <img src="assets/images/japan.jpg" alt="Japanese Yen">
+                    <input type="radio" name="currency" value="japan">
+                    <span>Japanese Yen</span>
+                </label>
+                <label>
+                    <img src="assets/images/canada.jpg" alt="Canadian Dollar">
+                    <input type="radio" name="currency" value="canada">
+                    <span>Canadian Dollar</span>
+                </label>
+                <label class ="money">
+                    <span>Amount  </span>
+                    <input type="number" name="amount" min="0" value="0" onchange="convertFromAmount(this.value)">
+                </label>
+            </div>
+            <div class = "convert">
+                <h3>Select Currency to Convert</h3>
+              
+                <label>
+                    <img src="assets/images/euro.jpg" alt="Euro">
+                    <input type="radio" name="currencyResult" value="euro">
+                    <span>Euro</span>
+                </label>
+                <label>
+                    <img src="assets/images/us.jpg" alt="US Dollar">
+                    <input type="radio" name="currencyResult" value="us">
+                    <span>US Dollar</span>
+                </label>
+                <label>
+                    <img src="assets/images/uk.jpg" alt="UK Pound Sterling">
+                    <input type="radio" name="currencyResult" value="uk">
+                    <span>UK Pound Sterling</span>
+                </label>
+                <label>
+                    <img src="assets/images/japan.jpg" alt="Japanese Yen">
+                    <input type="radio" name="currencyResult" value="japan">
+                    <span>Japanese Yen</span>
+                </label>
+                <label>
+                    <img src="assets/images/canada.jpg" alt="Canadian Dollar">
+                    <input type="radio" name="currencyResult" value="canada">
+                    <span>Canadian Dollar</span>
+                </label>
+                <label class ="money">
+                    
+                    <span>Result</span>
+                    <input type="text" name="amount" min="0" value="0" id="result">
+                
+
+                </label>
+                <label class ="rate">
+                    
+                    <span>Rate</span>
+                    <input type="text" name="rate" id="currency" value="">
+                    
+                    
+                </label>
+
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="assets/scripts/convert.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+header,
+footer {
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    background-image: url('../images/Background.jpg');
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.container {
+    position: relative;
+
+}
+
+#cubes,
+#cone,
+#spherica,
+#cylinders {
+    width: 280px;
+
+
+}
+
+.cubes,
+.cone,
+.spherica,
+.cylinders {
+    display: block;
+}
+
+#cubeDimesions1_1,
+#cubeDimesions2_1,
+#cubeDimesions3_1 {
+    width: 100px;
+}
+
+#cylindersDimensions1_1,
+#cylindersDimensions2_1 {
+    width: 100px;
+}
+
+#sphericaDimensions1_1 {
+    width: 100px;
+}
+
+#coneDimesions1_1,
+#coneDimesions2_1,
+#coneDimesions3_1 {
+    width: 100px;
+}
+
+form div {
+    width: 400px;
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    color: darkolivegreen;
+    border-radius: 30px;
+
+}
+
+form div label {
+    display: block;
+    font-weight: bold;
+}
+
+#submit {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.3em;
+    color: darkolivegreen;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-left: 100px;
+
+}
+
+#displayOrder {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    /* position: fixed; */
+    margin: 30px auto;
+   
+    
+    color: darkolivegreen;
+}

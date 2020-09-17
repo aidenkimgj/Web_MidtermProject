@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aiden's Landscaping Service</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Aiden's Landscaping Service</h1>
+            <h4>Contact Tel. 403-555-7777 &nbsp; E-mail. aidenslandscaping@gmail.com</h4>
+        </header>
+
+        <form action="#" onsubmit="calcOrder(); return false" >
+
+            <div>
+                <h3>Customer Information</h3>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" pattern="[a-zA-Z]{2,64}" title="Please enter Letter" id="firstName"
+                    placeholder="ex) John" autofocus>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" pattern="[a-zA-Z]{2,64}" title="Please enter Letter" id="lastName"
+                    placeholder="ex) Doe">
+
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Address">
+
+                <label for="regPC">Postal Code</label>
+                <input type="text" name="regPC" id="postalCode" maxlength="7"
+                    pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" title="Please enter ex) A1B 2C3"
+                    placeholder="ex) A1B 2C3">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" pattern="\d{3}-\d{3}-\d{4}" title="ex) 403-123-1234" id="phone"
+                    placeholder="123-456-7890">
+
+                <label for="regEmail">Email Address</label>
+                <input type="email" name="regEmail" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*"
+                    placeholder="example@gmail.com">
+            </div>
+
+            <div id="table2" >
+                <h3>Select Shapes Type</h3>
+
+                <select name="shapeSwitch" id="shapeType" onchange="changeShapeSystem(this.value)">
+                    <option value="Square/Rectangular Cubes" selected="true">Square/Rectangular Cubes</option>
+                    <option value="Flat bottomed cylinders">Flat bottomed cylinders</option>
+                    <option value="1/2 Spherica">1/2 Spherica</option>
+                    <option value="Truncated cone">Truncated cone</option>
+                </select>
+
+
+                <h3>Dimension infomation</h3>
+
+                <div id="cubes">
+
+                    <h4>Square/Rectangular Cubes</h4>
+                    <label for=""></label>
+                    <select name="cubeDimensions1" id="cubeDimensions1" class="cubes">
+                        <option value="">----------</option>
+                        <option value="length">Length</option>
+                        <option value="width">Width</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="cubeDimensions1_1" id="cubeDimesions1_1" min="0" value="0" class="cubes">
+
+
+                    <select name="cubeDimensions2" id="cubeDimensions2" class="cubes">
+                        <option value="">----------</option>
+                        <option value="length">Length</option>
+                        <option value="width">Width</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="cubeDimensions2_1" id="cubeDimesions2_1" min="0" value="0" class="cubes">
+
+
+                    <select name="cubeDimensions3" id="cubeDimensions3" class="cubes">
+                        <option value="">----------</option>
+                        <option value="length">Length</option>
+                        <option value="width">Width</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="cubeDimensions3_1" id="cubeDimesions3_1" min="0" value="0" class="cubes">
+
+                </div>
+
+                <div id="cylinders">
+
+                    <h4>Flat bottomed cylinders</h4>
+                    <select name="cylindersDimensions1" id="cylindersDimensions1" class="cylinders" disabled="true">
+                        <option value="">----------</option>
+                        <option value="radius">Radius</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="cylindersDimensions1_1" disabled="true" id="cylindersDimensions1_1"
+                        min="0" value="0" class="cylinders">
+
+
+                    <select name="cylindersDimensions2" id="cylindersDimensions2" class="cylinders" disabled="true">
+                        <option value="">----------</option>
+                        <option value="radius">Radius</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="cylindersDimensions2_1" disabled="true" id="cylindersDimensions2_1"
+                        min="0" value="0" class="cylinders">
+
+                </div>
+
+                <div id="spherica">
+
+                    <h4>1/2 Spherica</h4>
+                    <select name="sphericaDimensions1" id="sphericaDimensions1" class="spherica" disabled="true">
+                        <option value="">----------</option>
+                        <option value="radius">Radius</option>
+                    </select>
+                    <input type="number" name="sphericaDimensions1_1" id="sphericaDimensions1_1" min="0" value="0"
+                        disabled="true" class="spherica">
+
+                </div>
+
+                <div id="cone">
+
+                    <h4>Truncated cone</h4>
+                    <select name="coneDimensions1" id="coneDimensions1" class="cone" disabled="true">
+                        <option value="">----------</option>
+                        <option value="radius1">Radius1</option>
+                        <option value="radius2">Radius2</option>
+
+                    </select>
+                    <input type="number" name="coneDimesion1_1" id="coneDimesions1_1" min="0" value="0" disabled="true"
+                        class="cone">
+
+
+                    <select name="coneDimensions2" id="coneDimensions2" class="cone" disabled="true">
+                        <option value="">----------</option>
+                        <option value="radius1">Radius1</option>
+                        <option value="radius2">Radius2</option>
+
+                    </select>
+                    <input type="number" name="coneDimensions2_1" id="coneDimesions2_1" min="0" value="0"
+                        disabled="true" class="cone">
+
+
+                    <select name="coneDimensions3" id="coneDimensions3" class="cone" disabled="true">
+                        <option value="">----------</option>
+                        <option value="height">Height</option>
+                    </select>
+                    <input type="number" name="coneDimensions3_1" id="coneDimesions3_1" min="0" value="0"
+                        disabled="true" class="cone">
+
+                </div>
+                <input type="submit" id="submit" value="Submit"></input>
+                <!-- <input type="button" value="Submit" onclick="calcOrder()" id="submit"></input> -->
+            </div>
+ 
+        </form>
+ 
+    </div>
+
+    <section id="displayOrder"></section>
+    <footer>
+        <h4>Copyright © Aiden's Landscaping Service</h4>
+    </footer>
+
+    <script type="text/javascript" src="assets/scripts/landscaping.js"></script>
+</body>
+
+</html>
